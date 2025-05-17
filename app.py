@@ -86,11 +86,11 @@ if st.button("Predict"):
     prob = model_pipeline.predict_proba(input_df)[0][1]  # Probability of churn
     prediction = 1 if prob >= 0.4 else 0  # Custom threshold of 0.4
 
-    st.markdown("### 🔍 Prediction Result")
+    st.markdown("### Prediction Result")
     st.success(f"**Prediction:** {'Churn' if prediction == 1 else 'No Churn'}")
     st.info(f"**Churn Probability:** {prob:.2f} (Threshold: 0.4)")
 
     if prediction == 1:
-        st.warning("⚠️ This customer is **likely to churn**. Consider taking retention action.")
+        st.warning("This customer is **likely to churn**. Consider taking retention action.")
     else:
-        st.success("✅ This customer is **likely to stay**.")
+        st.success("This customer is **likely to stay**.")
