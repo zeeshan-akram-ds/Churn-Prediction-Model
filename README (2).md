@@ -1,31 +1,31 @@
 
-# 📊 Customer Churn Prediction
+#  Customer Churn Prediction
 
 This repository contains two comprehensive Jupyter notebooks developed to predict customer churn using various machine learning models and detailed exploratory data analysis. The project is focused on understanding churn patterns and building robust predictive models using both classical and boosting algorithms.
 
 ---
 
-## 🔍 Project Overview
+##  Project Overview
 
 Customer churn is one of the key challenges faced by telecom companies. Reducing churn rate can lead to significantly higher profitability. This project demonstrates the end-to-end process of churn prediction — from data preprocessing to model building and evaluation.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
-├── Churn_Voting_Model.ipynb     # Main modeling file with VotingClassifier
-├── Churn_LightGBM_EDA.ipynb     # In-depth EDA and LightGBM model
+├── customer_voting_churn.ipynb     # Main modeling file with VotingClassifier
+├── Customer Churn Analysis.ipynb     # In-depth EDA and LightGBM model
 ├── requirements.txt             # Required packages
 └── README.md                    # Project documentation
 ```
 
 ---
 
-## ✅ Highlights
+##  Highlights
 
-### 1. `Churn_Voting_Model.ipynb` (Modeling-Focused)
+### 1. `customer_voting_churn` (Modeling-Focused)
 
 - **Data Cleaning**:
   - Handled incorrect `TotalCharges` data type.
@@ -63,7 +63,7 @@ Customer churn is one of the key challenges faced by telecom companies. Reducing
 
 ---
 
-### 2. `Churn_LightGBM_EDA.ipynb` (Exploratory Data Analysis & LightGBM)
+### 2. `Customer Churn Analysis.ipynb` (Exploratory Data Analysis & LightGBM)
 
 - **EDA & Visualizations**:
   - Barplots, countplots, pie charts, boxplots, histograms.
@@ -103,26 +103,26 @@ Customer churn is one of the key challenges faced by telecom companies. Reducing
 
 ---
 
-## 📌 Final Notes
+##  Final Notes
 
-- The VotingClassifier in `Churn_Voting_Model.ipynb` provided the best balance of precision and recall, especially when using a custom threshold of 0.4.
+- The VotingClassifier in `customer_churn_voting.ipynb` provided the best balance of precision and recall, especially when using a custom threshold of 0.4.
 - The LightGBM notebook offers valuable domain insights and detailed visualizations — ideal for understanding churn patterns and presenting data storytelling.
 
 ---
 
-## 📦 Installation
+##  Installation
 
 Install required packages:
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
 ---
 
-## 📈 Technologies Used
+##  Technologies Used
 
-- Python 3.x
+- Python 3.11
 - Pandas, NumPy
 - Scikit-learn, XGBoost, LightGBM
 - Matplotlib, Seaborn
@@ -131,7 +131,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Feel free to fork the repository and open a pull request.
 
