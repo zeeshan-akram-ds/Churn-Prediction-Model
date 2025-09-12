@@ -182,8 +182,14 @@ elif page == "Prediction & Explanation":
             st.stop()
 
         predicted_label = "will churn" if prob >= threshold_single else "will not churn"
+        # Calculate the probability corresponding to the predicted label
+        display_prob = prob if predicted_label == "will churn" else 1 - prob
+
         st.subheader("Prediction Result")
-        st.write(f"The customer **{predicted_label}** with a confidence of **{prob:.2%}**.")
+        st.write(f"The model estimates there is a **{display_prob:.2%} chance** that this customer {predicted_label}.")
+
+        # Show progress bar
+        st.progress(int(display_prob * 100))
 
         with st.expander("Explanation"):
             st.markdown("SHAP shows how each feature value contributes to the final prediction, helping to understand the model's reasoning.")
@@ -268,3 +274,4 @@ elif page == "Download & About":
         """
 
     )
+
