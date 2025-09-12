@@ -13,10 +13,10 @@ from sklearn.pipeline import Pipeline
 
 # ---------- CONFIGURATION ----------
 MODEL_PATH = "final_churn_model.pkl"
-IMG_PR_AUC = "pr_curve.png"
-IMG_ROC_AUC = "rocauc_curve.png"
-IMG_SHAP_SUMMARY = "shap_summary_plot.png"
-IMG_CONF_MATRIX = "confusion_matrix.png"
+IMG_PR_AUC = "images/pr_curve.png"
+IMG_ROC_AUC = "images/rocauc_curve.png"
+IMG_SHAP_SUMMARY = "images/shap_summary_plot.png"
+IMG_CONF_MATRIX = "images/confusion_matrix.png"
 
 X_train = joblib.load("X_train.pkl")  # Sample of training data for SHAP background
 # Default threshold for prediction output
@@ -266,4 +266,5 @@ elif page == "Download & About":
 - Class 1 (Churn): precision 0.53, recall 0.84, f1-score 0.65
 - Overall accuracy: 0.76
         """
+
     )
