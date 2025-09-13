@@ -43,7 +43,7 @@ Companies frequently face revenue declines due to unexpected customer churn. The
 ## Streamlit Apps
 ### Live Prediction App
 - **Link**: [https://churn-prediction-model-boafapprtqcjnhgxsft5kem.streamlit.app/](https://churn-prediction-model-boafapprtqcjnhgxsft5kem.streamlit.app/)
-- **Description**: Allows users to input customer details (e.g., tenure, contract type, services) and get real-time churn predictions with confidence scores. Features a slider to adjust thresholds (default 0.28) and a SHAP waterfall plot for interpretability. Recommended actions are suggested based on predictions.
+- **Description**: Allows users to input customer details (e.g., tenure, contract type, services) and get real-time churn predictions with confidence scores. Features a slider to adjust thresholds (default 0.28) and a SHAP waterfall plot for interpretability.
 - **Screenshot**: ![Live Prediction App Screenshot](images/prediction_app_interface.png)
 
 ### Dashboard App
